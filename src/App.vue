@@ -17,7 +17,8 @@
         </div>
         <div class="weather-box">
           <div class="temp">{{ Math.round(weather.main.temp) }}°C</div>
-          <div class="weather">{{ weather.weather[0].main }}</div>  
+          <div class="weather">{{ weather.weather[0].main }}</div>
+          <div class="icon"><img v-bind:src="'http://openweathermap.org/img/w/' + weather.weather[0].icon + '.png' "  /></div>
         </div>
       </div>
     </main>
