@@ -17,8 +17,8 @@
         </div>
         <div class="weather-box">
           <div class="temp">{{ Math.round(weather.main.temp) }}°C</div>
-          <div class="weather">{{ weather.weather[0].main }}</div>
-          <div class="icon"><img v-bind:src="'http://openweathermap.org/img/w/' + weather.weather[0].icon + '.png' "  /></div>
+          <div class="weather">{{ weather.weather[0].description }}</div>
+          <div class="icon"><img v-bind:src="'http://openweathermap.org/img/wn/' + weather.weather[0].icon + '@2x.png' "  /></div>
         </div>
       </div>
     </main>
@@ -150,5 +150,10 @@ main {
   font-weight: 700;
   font-style: italic;
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+.humidity {
+  color: #FFF;
+  font-size: 24px;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
 }
 </style> 
