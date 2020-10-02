@@ -11,12 +11,18 @@
         />
       </div>
       <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
+
         <div class="location-box">
           <div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
           <div class="date">{{ dateBuilder() }}</div>
         </div>
         <div class="weather-box">
           <div class="temp">{{ Math.round(weather.main.temp) }}°C</div>
+          <div class="info">
+            <div class="clouds"><i class="fas fa-cloud"></i> {{ weather.clouds.all }}%</div>
+            <div class="humidity"><i class="fas fa-tint"></i> {{ weather.main.humidity }}%</div>
+            <div class="wind"><i class="fas fa-wind"></i> {{ weather.wind.speed }}m/s</div>
+          </div>
           <div class="weather">{{ weather.weather[0].description }}</div>
           <div class="icon"><img v-bind:src="'http://openweathermap.org/img/wn/' + weather.weather[0].icon + '@2x.png' "  /></div>
         </div>
@@ -86,7 +92,7 @@ body {
 main {
   min-height: 100vh;
   padding: 25px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.60));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,9 +157,12 @@ main {
   font-style: italic;
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
 }
-.humidity {
+.info {
   color: #FFF;
-  font-size: 24px;
+  font-size: 18px;
   text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 0px 20px 0px;
 }
 </style> 
