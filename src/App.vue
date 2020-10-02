@@ -77,7 +77,7 @@ body {
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 #app.warm {
   background-image: url('./assets/warm-bg.jpg')
@@ -86,10 +86,13 @@ main {
   min-height: 100vh;
   padding: 25px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .search-box {
-  width: 100%;
-  margin-bottom: 30px;
+  width: 450px;
+  margin-bottom: 60px;
 }
 .search-box .search-bar {
   display: block;
