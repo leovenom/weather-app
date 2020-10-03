@@ -1,4 +1,5 @@
 # vue-weather
+![weather-app](https://github.com/leovenom/weather-app/blob/main/img/weather01.png)
 
 ## Project setup
 ```
