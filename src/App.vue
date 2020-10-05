@@ -11,7 +11,6 @@
         />
       </div>
       <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
-
         <div class="location-box">
           <div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
           <div class="date">{{ dateBuilder() }}</div>
@@ -27,9 +26,9 @@
           <div class="icon"><img v-bind:src="'http://openweathermap.org/img/wn/' + weather.weather[0].icon + '@2x.png' "  /></div>
         </div>
       </div>
-        <footer>
-          <small>© <b><a href="https://leonardt.eu/" target="_blank">Leonardt </a></b>- {{ new Date().getFullYear() }}</small>
-        </footer>
+      <footer>
+        <small>© <b><a href="https://leonardt.eu/" target="_blank">Leonardt </a></b>- {{ new Date().getFullYear() }}</small>
+      </footer>
     </main>
   </div>
 </template>
