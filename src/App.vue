@@ -28,7 +28,7 @@
         </div>
       </div>
         <footer>
-          <small>© <b><a href="https://leonardt-profile.netlify.app/" target="_blank">Leonardt Lauenstein </a></b>- {{ new Date().getFullYear() }}</small>
+          <small>© <b><a href="https://leonardt.eu/" target="_blank">Leonardt </a></b>- {{ new Date().getFullYear() }}</small>
         </footer>
     </main>
   </div>
