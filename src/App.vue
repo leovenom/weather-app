@@ -27,7 +27,7 @@
           <div class="icon"><img v-bind:src="'http://openweathermap.org/img/wn/' + weather.weather[0].icon + '@2x.png' "  /></div>
         </div>
       </div>
-                  <footer>
+        <footer>
           <small>© <b><a href="https://leonardt-profile.netlify.app/" target="_blank">Leonardt Lauenstein </a></b>- {{ new Date().getFullYear() }}</small>
         </footer>
     </main>
@@ -101,7 +101,7 @@ main {
   align-items: center;
 }
 .search-box {
-  width: 450px;
+  width: 80vw;
   margin-bottom: 60px;
 }
 .search-box .search-bar {
