@@ -26,9 +26,6 @@
           <div class="icon"><img v-bind:src="'http://openweathermap.org/img/wn/' + weather.weather[0].icon + '@2x.png' "  /></div>
         </div>
       </div>
-      <footer>
-        <small>© <b><a href="https://leonardt.eu/" target="_blank">Leonardt </a></b>- {{ new Date().getFullYear() }}</small>
-      </footer>
     </main>
   </div>
 </template>
@@ -166,14 +163,6 @@ main {
   display: flex;
   justify-content: space-around;
   margin: 0px 0px 20px 0px;
-}
-footer {
-  color: rgb(200, 200, 200);
-  font-size: 19px;
-  font-weight: 300;
-  text-align: center;
-  position: fixed;
-  bottom:15px;
 }
 small a {
   color: rgb(200, 200, 200);
